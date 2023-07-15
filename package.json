@@ -1,0 +1,14 @@
+{
+  "name": "Zk-MerkleTree",
+  "version": "1.0.0",
+  "description": "zk merkle tree implementation",
+  "author": "bauti.eth",
+  "license": "MIT",
+  "devDependencies": {
+    "snarkjs": "0.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.19"
+}
