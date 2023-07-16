@@ -63,14 +63,6 @@ template MerkleTreeLevel(leafCount, nodeCount) {
     }
 }
 
-template MerkleTreeChecker(levels) {
-    signal input leaves[2**levels];
-    signal input root;
-
-    component tree = MerkleTree(levels);
-    tree.leaves <== leaves;
-    tree.root === root;
-}
 
 // @dev leafCount = 2**levels
 // @dev result is sensitive to the order of leaves
