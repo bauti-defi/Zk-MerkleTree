@@ -1,16 +1,16 @@
 # Zk-MerkleTree
 
-A circom circuit implementation of a Merkle Tree. There are two circuits: `Tree.circom` and `TreeChecker.circom`. The `Tree.circom` circuit takes an array of leaves and outputs `true` if the generated root is correct and `false` if it is not. The `TreeChecker.circom` circuit takes an array of leaves and a Merkle Tree root and outputs `true` if the root is valid and `false` if it is not.
+A circom circuit implementation of a Merkle Tree. With this circuit you can prove that a list of leaves computes to a given merkle root. 
 
 ---
 
 ### 🔍 Audits
 This code is not audited and should be used for educational purposes only. **If you get wreck'd, it's not my fault.** ⚠️
 
-To become an auditor, submit a PR with your name added to the list below and a link to your audit. All audits must be performed on the `master` branch.
+To become an auditor, submit a PR with your name added to the list below and a link to your audit. All audits must be performed on the `main` branch.
 
 **Audited By:**
--  ...
+-  could be you?
 
 ### ⚠️ Disclaimer 
 

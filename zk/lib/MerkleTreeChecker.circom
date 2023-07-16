@@ -22,6 +22,13 @@
 
 pragma circom 2.0.0;
 
-include "MerkleTreeChecker.circom";
+include "MerkleTree.circom";
 
-component main {public [leaves, root]} =  MerkleTreeChecker(2);
+template MerkleTreeChecker(levels) {
+    signal input leaves[2**levels];
+    signal input root;
+
+    component tree = MerkleTree(levels);
+    tree.leaves <== leaves;
+    tree.root === root;
+}
