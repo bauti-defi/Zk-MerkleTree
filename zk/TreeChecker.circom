@@ -22,6 +22,6 @@
 
 pragma circom 2.0.0;
 
-include "MerkleTree.circom";
+include "MerkleTreeChecker.circom";
 
 component main {public [leaves, root]} =  MerkleTreeChecker(2);
